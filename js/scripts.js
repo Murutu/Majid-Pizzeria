@@ -1,0 +1,20 @@
+$(document).ready(function(){
+    $("#d1-show").click(function(){
+        $("#k-hidden").toggle();
+    });
+});
+$(document).ready(function(){
+    $("#d2-show").click(function(){
+        $("#l-hidden").toggle();
+    });
+});
+$(document).ready(function(){
+    $("#d3-show").click(function(){
+        $("#m-hidden").toggle();
+    });
+});
+$(document).ready(function(){
+    $("#d4-show").click(function(){
+        $("#n-hidden").toggle();
+    });
+});

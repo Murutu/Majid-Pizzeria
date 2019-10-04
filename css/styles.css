@@ -9,7 +9,7 @@
 }
 
 .a{
-    background-image:url(../images/man.jpeg);
+    background-image:url(../images/fab.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     /* height: 800px;
@@ -56,4 +56,16 @@
 
 #d4-show{
     width:200px;
+}
+#k-hidden{
+    display:none;
+}
+#l-hidden{
+    display:none;
+}
+#m-hidden{
+    display:none;
+}
+#n-hidden{
+    display:none;
 }
