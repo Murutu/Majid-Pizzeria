@@ -12,6 +12,9 @@ li{
     display:inline;
 }
 
+a{
+    color:black;
+}
 .a{
     background-image:url(../images/fab.jpeg);
     background-size: cover;
