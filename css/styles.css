@@ -3,5 +3,23 @@
 }
 
 .a{
-    background-image:url(../images/pizz.jpg);
+    background-image:url(../images/man.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: auto;
+}
+#b{
+   text-align:center;
+   padding-top: 35px;
+   font-size: 45px;
+   color:black;
+
+}
+
+#d{
+    color:black;
+    background-color: white;
+    padding:100px;
+    text-align:center;
 }
