@@ -28,5 +28,6 @@ $(document).ready(function(){
     //user interface
     $("#sub").click(function(event){
         event.preventDefault();
-        var size = $('#sizeoption')
-    })
+        var size = $('#sizeoption').val();
+        console.log(size);
+    });
