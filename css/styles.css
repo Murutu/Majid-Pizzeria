@@ -77,3 +77,10 @@ a{
     display:none;
 }
 
+#o{
+    color:white;
+    background-color:rgb(7, 7, 121);
+    padding:100px;
+    /* text-align: center; */
+    width:100%;
+}
