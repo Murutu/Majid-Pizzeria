@@ -18,3 +18,15 @@ $(document).ready(function(){
         $("#n-hidden").toggle();
     });
 
+    //business logic
+    function placeholder(size) {
+        this.pzSize;
+    }
+    placeOrder.prototype.summary = function() {
+        return "pizzasize:" + this.pzSize;
+    };
+    //user interface
+    $("#sub").click(function(event){
+        event.preventDefault();
+        var size = $('#sizeoption')
+    })
