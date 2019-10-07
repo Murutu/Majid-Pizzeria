@@ -19,18 +19,6 @@ $(document).ready(function(){
     });
 
     //business logic
-    function placeholder(size) {
-        this.pzSize;
-    }
-    placeOrder.prototype.summary = function() {
-        return "pizzasize:" + this.pzSize;
-    };
-    //user interface
-    $("#sub").click(function(event){
-        event.preventDefault();
-        var size = $('#sizeoption').val();
-        console.log(size);
-    });
     function Order(name, pizza,  crust,  delivery) {
         this.customerName = name;
         this.selectedPizza = pizza;
@@ -43,4 +31,14 @@ $(document).ready(function(){
             function Price(pizzaPrice){
                 this.priceForSelectedPizza = pizzaPrice;
               }
+              Price.prototype.subtotal = function(){
+                return this.priceForSelectedPizza ;
+              }
+    //user interface
+    $("#sub").click(function(event){
+        event.preventDefault();
+        var size = $('#sizeoption').val();
+        console.log(size);
+    });
+    
 
