@@ -37,6 +37,10 @@ $(document).ready(function(){
         this.selectedCrust = crust;
         this.deliveryOption = delivery;
       }
-      function Address(city, estate, mobileNumber){
-        this.cityName = city;
+      function Address(location,){
+        this.locationName = location;
+        {
+            function Price(pizzaPrice){
+                this.priceForSelectedPizza = pizzaPrice;
+              }
 
