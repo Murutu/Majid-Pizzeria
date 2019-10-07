@@ -31,3 +31,12 @@ $(document).ready(function(){
         var size = $('#sizeoption').val();
         console.log(size);
     });
+    function Order(name, pizza,  crust,  delivery) {
+        this.customerName = name;
+        this.selectedPizza = pizza;
+        this.selectedCrust = crust;
+        this.deliveryOption = delivery;
+      }
+      function Address(city, estate, mobileNumber){
+        this.cityName = city;
+
