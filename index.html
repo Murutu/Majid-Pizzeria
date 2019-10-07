@@ -108,42 +108,68 @@
         location: <input type="text" name="location" placeholder="your address">
 
         <p>Below enter the size of pizza you want</p>
-            <select>
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
+         <div class="pizza-size">
+                <input type ="radio" name ="size" value="Small, 600" id ="small" class="sizes"required>Small<br>
+                <input type ="radio" name ="size" value="Medium, 800" id ="medium"class="sizes"required>Medium<br>
+                <input type ="radio" name ="size" value="Large, 1000" id ="large"class="sizes" required>Large<br>
+         </div>
+
+        
+         <div>
+                <input type ="number"  id ="qty" class="quantity">Quantity<br>
+         </div>
+         <div id="pizza-topping">
+                <input id="talioni" name="top"type="radio" value="Talioni, 100" class="toppings" required>Talioni<br>
+                <input id="barbacao" name="top"type="radio"value="Barbacao, 150" class="toppings" required>Barbacao<br>
+                <input id="chicken" name="top"type="radio"value="Chicken, 200" class="toppings" required>Chicken Silica<br>
+                <input id="cupon" name="top"type="radio"value="Cupon, 160"class="toppings" required>Cupon<br>
+        </div>
+        <div id="pizza-crusts">
+                <input id="Italian" name="crusty"type ="radio" value ="Italian, 100" class="crusts" required>  Italian Hand Made</option>
+                <input id="American"name="crusty" type ="radio" value="American, 200"class="crusts"required>American Hand Tossed</option>
+        </div>
+         
+        
+
+            <!-- <select id="sizes">
+                <option value="600">Small</option>
+                <option value="800">medium</option>
+                <option value="1000">Large</option>
             </select>
 
             <p>Choose your desired flavour</p>
-            <input type='checkbox'>Talioni
-            <input type='checkbox'>Barbacao
-            <input type='checkbox'>Chicken Silica
-            <input type='checkbox'>Cupon
-
+            <div id="toppings">
+            <input value="talioni" type='checkbox'>Talioni
+            <input value="barbacao" type='checkbox'>Barbacao
+            <input value="chicken" type='checkbox'>Chicken Silica
+            <input value="cupon" type='checkbox'>Cupon
+            </div>
             <p>Choose your crust</p>
-            <input type='checkbox'>Italian Thin Crust</input>
-            <input type='checkbox'>American Hand Tossed</input>
-            <br>
+            <select id="crusts">
+                    <option value="Italian">Italian Hand Made</option>
+                    <option value="American">American Hand Tossed</option>
+            </select>
+            <br> -->
             <button type="Submit" value="submit" id="sub">submit</button>
         </div>
         <div class="col-md-3" id="dre">
             <h4 id="sum">Summary</h4>
-            <h4 id="tol">Total:</h4>
-            <button type="button" onclick="window.location.reload(true)" id="Neworder">New Order</button>
+
+          <p>Size:<span class = "display-size"></span></p>
+          <p>Quantity:<span class = "display-quantity"></span></p>
+          <p>Toppings:<span class = "display-toppings"></span></p>
+          <p>Crusts:<span class = "display-crusts"></span></p>  
+          <p>Total:<span class = "display-total"></span></p>  
+          
+            <!-- <h4 id="tol">Total:</h4>
+            <button type="button" onclick="window.location.reload(true)" id="Neworder">New Order</button> -->
         </div>
+    </form>
         
         
-           
-            
-       
 
-
-
-
-
-
-<script src="js/jquery-1.12.0.js"></script>
-<script src="js/scripts.js"></script>   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./js/scripts.js"></script>   
 </body>
 
 </html>
